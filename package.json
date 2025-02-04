@@ -1,0 +1,22 @@
+{
+  "name": "telegram-trade-warrning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "@types/ws": "^8.5.14",
+    "dotenv": "^16.4.7",
+    "node-telegram-bot-api": "^0.66.0",
+    "ws": "^8.18.0"
+  }
+}
