@@ -9,7 +9,7 @@ class my_emiter extends EventEmitter{};
 const emiter = new my_emiter();
 
 // Add the pairs you want to watch. It has to be lowercase, the full list you could find on binance official API docs.
-const symbol:Array<string> = ['solusdt','suiusdt','adausdt','btcusdt','ethusdt','avaxusdt','fetusdt','aptusdt','dotusdt'];  
+const symbol:Array<string> = ['solusdt','btcusdt'];  
 const symbol_pairs = symbol.map((arg:string)=>`${arg}@ticker`).join("/");
 const live_str = process.env.binance_live_price;
 

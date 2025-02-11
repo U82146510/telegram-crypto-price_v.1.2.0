@@ -1,48 +1,61 @@
-# Crypto Telegram Bot
+rypto Telegram Bot (Updated Version)
 
-A Node.js Telegram bot that monitors cryptocurrency pairs and alerts users when the price crosses specified high and low targets.
+This is an updated version of the Crypto Telegram Bot, bringing new features such as live price tracking and account balance retrieval from OKX and Binance. It retains all previous functionalities while enhancing user experience with additional commands.
 
-## Features
-- Monitor cryptocurrency prices in real-time.
-- Set custom high and low price targets.
-- Receive instant alerts when prices cross set thresholds.
-- Start and stop monitoring as needed.
+Updated Features
 
-## Installation
+Live price tracking for selected cryptocurrency pairs.
 
-1. Clone the repository:
-git clone https://github.com/U82146510/telegram-trade-warrning.git cd telegram-trade-warrning
+Retrieve account balances from OKX and Binance.
 
-2. Install dependencies:
+Improved monitoring capabilities with more precise alerts.
+
+Installation
+
+Clone the repository:
+git clone https://github.com/U82146510/telegram-crypto-price-alert
+cd telegram-trade-warrning
+
+Install dependencies:
 npm install
 
-3. Create a `.env` file and add your Telegram bot token:
+Create a .env file and add your Telegram bot token:
 telegram_token=your_telegram_bot_token
 
-4. Start the bot:
-npm start  
-or
+Start the bot:
+npm startor
 node index.ts
 
+Commands & Usage
 
-## Commands
-Menu: /start -start monitoring. stop -stop monitoring. high -display the highest prices. low -display the lowest prices.
+/start - Start monitoring crypto prices.
+/stop - Stop monitoring crypto prices.
+/high - Display the highest recorded prices.
+/low - Display the lowest recorded prices.
+/live - Show real-time prices for selected cryptocurrency pairs (New Feature!).
+/ok - Show account balance on OKX exchange (New Feature!).
+/binance - Show account balance on Binance exchange (New Feature!).
+min:<currency_pairs>: - Set the lowest price target (e.g., min:btcusdt:5000).
+max:<currency_pairs>: - Set the highest price target (e.g., max:btcusdt:15000).
 
-min:btcusdt:5000 -set the lowest price for BTC/USDT. max:btcusdt:15000 -set the highest price for BTC/USDT.
+Dependencies
 
-## Usage
-- Send `/start` in Telegram to begin monitoring.
-- Use `min:btcusdt:5000` to set the lowest price target.
-- Use `max:btcusdt:15000` to set the highest price target.
-- The bot will notify you when the price moves beyond the set thresholds.
+Node.js
 
-## Dependencies
-- [Node.js](https://nodejs.org/)
-- [Telegraf](https://www.npmjs.com/package/telegraf) (Telegram bot framework)
-- [WebSocket](https://www.npmjs.com/package/ws) (for real-time crypto price updates)
+Telegraf (Telegram bot framework)
 
-## License
+WebSocket (for real-time crypto price updates)
+
+Binance API (for retrieving Binance balances)
+
+OKX API (for retrieving OKX balances)
+
+License
+
 This project is licensed under the MIT License.
 
-## Author
+Author
+
 [U82146510]
+
+Enjoy real-time crypto monitoring with instant alerts and new features!
